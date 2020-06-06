@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+*::selection {
+    background-color: rgba(255, 205, 32, 0.9);
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*------NAVBAR------*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #ffc600;
+    font-family: 'Poppins', sans-serif;
+}
+
+header h2 {
+    margin-right: auto;
+}
+
+nav ul li {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: all ease 0.2s ;
+}
+
+nav ul li:hover {
+    color: #fbfbfb;
+}
+
+
+/*------FIRST DIV------*/
+.firstDiv {
+    background-color: #fcfcfc;
+    border-bottom: solid 1px #ffc600;
+    padding: 110px 10%;
+}
+
+.firstDiv h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+button {
+    background-color: #ff2929;
+    color:#fbfbfb;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+button:hover {
+    background-color: #e01a1a;
+}
+
+
+/*------RAVE REVIEWS------*/
+.raveReviews {
+    padding: 50px 10%;
+    background-color: #fbfbfb;
+    border-bottom: #ffc600 solid 1px;
+}
+
+.raveReviews h2{
+    font-family: 'Playfair Display', serif;
+    display: block;
+}
+
+.raveReviewsSections {
+    display: flex;
+}
+
+.raveReviewsSections div {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #ffc600;
+    margin-right: 15px;
+    padding: 30px 20px;
+    text-align: justify;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+
+
+/*------PROJECTS------*/
+.projects {
+    background-color: #fcfcfc;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: #ffc600 solid 1px;
+    padding: 100px 10%;
+}
+
+.projects h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 17px;
+}
+
+.projectImages {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(5);
+}
+
+.projectImageOne {
+    grid-column: 1;
+    grid-row: 1;
+    width: 400px;
+    height: 214px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.projectImageTwo {
+    grid-column: 2;
+    grid-row: 1;
+    width: 250px;
+    height: 250px;
+    margin: 75px auto 0px auto;
+    cursor: pointer;
+}
+
+.projectImageThree {
+    grid-column: 1;
+    grid-row: 2;
+    width: 250px;
+    height: 250px;
+    margin: 75px auto 0px auto;
+    cursor: pointer;
+}
+
+.projectImageFour {
+    grid-column: 2;
+    grid-row: 2;
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.projectImageFive {
+    grid-column: 1;
+    grid-row: 3;
+    width: 250px;
+    height: 250px;
+    margin: 75px auto 0px auto;
+    cursor: pointer;
+}
+
+.projectImageSix {
+    grid-column: 2;
+    grid-row: 3;
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.projectImageSeven {
+    grid-column: 1;
+    grid-row: 4;
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.projectImageEight {
+    grid-column: 2;
+    grid-row: 4;
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.projectImageNine {
+    grid-column: 1;
+    grid-row: 5;
+    width: 250px;
+    height: 250px;
+    margin: 75px auto 0px auto;
+    cursor: pointer;
+}
+
+.projectImageTen {
+    grid-column: 2;
+    grid-row: 5;
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+
+/*------WHO AM I?------*/
+.whoAmI {
+    padding: 50px 10%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fbfbfb;
+}
+
+.whoAmI h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.whoAmI2 {
+    display: flex;
+}
+
+.img {
+    width: 250px;
+    height: 250px;
+    margin-right: 50px;
+    border-radius: 2px;
+}
+
+.paragraphs > p:nth-child(3) {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+
+/*------LET'S CONNECT------*/
+.letsConnect {
+    background-color: #000720;
+    color: #fbfbfb;
+    padding: 60px 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.letsConnect h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 17px;
+}
+
+span {
+    color: #f71b1b;
+    cursor: pointer;
+}
+
+
+/*------FOOTER------*/
+footer {
+    background-color: #ffc600;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 0px;
+}
+
+footer ul {
+    margin: 0px;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+
+}
+
+footer ul li {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding: 0px;
+    cursor: pointer;
+    margin: 0px 20px;
+    transition: all ease 0.2s ;
+}
+
+footer ul li:hover {
+    color: #fbfbfb;
+}
+
+footer ul > li:nth-child(1) {
+    margin-left: 0px;
+}
+
+footer ul > li:nth-child(6) {
+    margin: 0px;
+    margin-left: auto;
+    cursor: text;
+    transition: none;
+}
+
+footer ul > li:nth-child(6):hover {
+    color: black;
+}
+
