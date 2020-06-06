@@ -76,35 +76,6 @@ button:hover {
     background-color: #e01a1a;
 }
 
-
-/*------RAVE REVIEWS------*/
-.raveReviews {
-    padding: 50px 10%;
-    background-color: #fbfbfb;
-    border-bottom: #ffc600 solid 1px;
-}
-
-.raveReviews h2{
-    font-family: 'Playfair Display', serif;
-    display: block;
-}
-
-.raveReviewsSections {
-    display: flex;
-}
-
-.raveReviewsSections div {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    background-color: #ffc600;
-    margin-right: 15px;
-    padding: 30px 20px;
-    text-align: justify;
-    border-radius: 3px;
-    margin-top: 25px;
-}
-
-
 /*------PROJECTS------*/
 .projects {
     background-color: #fcfcfc;
