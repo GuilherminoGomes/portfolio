@@ -51,7 +51,7 @@ nav ul li:hover {
 
 /*------FIRST DIV------*/
 .firstDiv {
-    background-color: #fcfcfc;
+    background-color: white;
     border-bottom: solid 1px #ffc600;
     padding: 110px 10%;
 }
@@ -80,7 +80,7 @@ button:hover {
 
 /*------PROJECTS------*/
 .projects {
-    background-color: #fcfcfc;
+    background-color: #fafafa;
     font-family: 'Poppins', sans-serif;
     border-bottom: #ffc600 solid 1px;
     padding: 100px 10%;
@@ -157,7 +157,21 @@ button:hover {
 
 
 
+.technological-skills-block {
+    text-align: center;
+    background-color: white;
+    padding: 80px 0 70px 0;
+}
 
+.technological-skills-block h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+.technological-skills-block p {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 27px;
+}
 
 .technological-skills-container {
     grid-template-columns: repeat(6, 1fr);
@@ -166,9 +180,26 @@ button:hover {
     align-items: center;
     display: grid;
     grid-gap: 2px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     justify-content: center;
+    margin: 0 20%;
+}
+
+.technological-skills-container p {
+    background-color: #ffc600;
+    border: 1px solid #ffc600;
+    border-radius: 3px;
+    color: black;
+    font-weight: 600;
+    padding: .5em;
+    transition: all ease .5s;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.technological-skills-container p:hover {
+    background-color: #fff;
 }
 
 
@@ -182,7 +213,7 @@ button:hover {
 .whoAmI {
     padding: 50px 10%;
     font-family: 'Poppins', sans-serif;
-    background-color: #fbfbfb;
+    background-color: #fafafa;
 }
 
 .whoAmI h2 {
