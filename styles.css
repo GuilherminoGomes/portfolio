@@ -10,14 +10,13 @@
 }
 
 *::selection {
-    background-color: rgba(255, 205, 32, 0.9);
+    background-color: rgba(255, 41, 41, 0.7);
 }
 
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /*------NAVBAR------*/
 header {
@@ -28,10 +27,6 @@ header {
     background-color: #ffc600;
     font-family: 'Poppins', sans-serif;
 }
-
-/*header h2 {
-    margin-right: auto;
-}*/
 
 header img, a {
     height: 40px;
@@ -56,31 +51,33 @@ nav ul li:hover {
 
 
 /*------FIRST DIV------*/
-.firstDiv {
+.first-div {
     background-color: white;
     border-bottom: solid 1px #ffc600;
-    padding: 110px 10%;
+    padding: 90px 10% 110px 10%;
 }
 
-.firstDiv h1 {
+.first-div h1 {
     font-family: 'Playfair Display', serif;
+    font-size: 75px;
 }
 
-.firstDiv button {
+.first-div button {
     background-color: #ff2929;
     color:#fbfbfb;
     border: none;
     border-radius: 5px;
     padding: 15px;
     font-family: 'Poppins', sans-serif;
-    margin-top: 25px;
+    margin-top: 35px;
     transition: all ease 0.5s;
     cursor: pointer;
     margin-right: 30px;
+    font-size: 14px;
 }
 
-.firstDiv button:hover {
-    background-color: #e01a1a;
+.first-div button:hover {
+    background-color: #ff4d4d;
 }
 
 
@@ -96,15 +93,16 @@ nav ul li:hover {
 .projects h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 17px;
+    font-size: 28px;
 }
 
-.projectImages {
+.project-images {
     display: grid;
     grid-template-columns: repeat(3);
     grid-template-rows: repeat(2);
 }
 
-.projectImageOne {
+.project-img-1 {
     grid-column: 1;
     grid-row: 1;
     width: 400px;
@@ -113,7 +111,7 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-.projectImageTwo {
+.project-img-2 {
     grid-column: 2;
     grid-row: 1;
     width: 164px;
@@ -122,7 +120,7 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-.projectImageThree {
+.project-img-3 {
     grid-column: 3;
     grid-row: 1;
     width: 132px;
@@ -131,7 +129,7 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-.projectImageFour {
+.project-img-4 {
     grid-column: 1;
     grid-row: 2;
     width: 400px;
@@ -140,7 +138,7 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-.projectImageFive {
+.project-img-5 {
     grid-column: 2;
     grid-row: 2;
     width: 164px;
@@ -149,7 +147,7 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-.projectImageSix {
+.project-img-6 {
     grid-column: 3;
     grid-row: 2;
     width: 132px;
@@ -169,6 +167,7 @@ nav ul li:hover {
 .technological-skills-block h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
+    font-size: 28px;
 }
 
 .technological-skills-block p {
@@ -176,14 +175,12 @@ nav ul li:hover {
     margin-bottom: 27px;
 }
 
-.technological-skills-container {
-    grid-template-columns: repeat(6, 1fr);
-}
+
 .technological-skills-container {
     align-items: center;
     display: grid;
-    grid-gap: 2px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     justify-content: center;
     margin: 0 20%;
@@ -195,10 +192,68 @@ nav ul li:hover {
     border-radius: 3px;
     color: black;
     font-weight: 600;
-    padding: .5em;
+    padding: 10px 8px;
     transition: all ease .5s;
     margin-bottom: 25px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html-grid {
+    grid-column: span 2;
+    grid-row: 1;
+}
+
+.css-grid {
+    grid-column: span 2;
+    grid-row: 1;
+}
+
+.javascript-grid {
+    grid-column: span 2;
+    grid-row: 1;
+}
+
+.git-grid {
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.github-grid {
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.sass-grid {
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.jquery-grid {
+    grid-column: span 3;
+    grid-row: 3;
+}
+
+.react-grid {
+    grid-column: span 3;
+    grid-row: 3;
+}
+
+.redux-grid {
+    grid-column: span 3;
+    grid-row: 4;
+}
+
+.wordpress-grid {
+    grid-column: span 3;
+    grid-row: 4;
+}
+
+.technological-skills-container p img {
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
 }
 
 .technological-skills-container p:hover {
@@ -207,49 +262,51 @@ nav ul li:hover {
 
 
 /*------WHO AM I?------*/
-.whoAmI {
+.who-am-i-container {
     padding: 50px 10%;
     font-family: 'Poppins', sans-serif;
     background-color: #fafafa;
 }
 
-.whoAmI h2 {
+.who-am-i-container h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
     text-align: justify;
+    font-size: 28px;
 }
 
-.whoAmI2 {
+.who-am-i {
     display: flex;
 }
 
-.img {
+.who-am-i img {
     width: 250px;
     height: 250px;
     margin-right: 50px;
     border-radius: 2px;
 }
 
-.paragraphs > p:nth-child(3) {
+.who-am-i-paragraphs > p:nth-child(3) {
     margin-top: 20px;
     font-size: 17px;
 }
 
 
 /*------LET'S CONNECT------*/
-.letsConnect {
+.lets-connect {
     background-color: #000720;
     color: #fbfbfb;
     padding: 60px 10%;
     font-family: 'Poppins', sans-serif;
 }
 
-.letsConnect h2 {
+.lets-connect h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 17px;
+    font-size: 28px;
 }
 
-span {
+.lets-connect p span {
     color: #f71b1b;
     cursor: pointer;
 }
@@ -307,19 +364,21 @@ footer ul > li:nth-child(6):hover {
 
 
 
-/*-----MEDIA QUERIES-----*/
-@media (max-width: 768px) {
+/*-------------MEDIA QUERIES-------------*/
+@media (min-width: 768px) 
+and (max-width: 1024px)
+and (orientation : portrait) {
     header {
         padding-left: 6%;
         padding-right: 6%;
     }
 
-    .firstDiv {
+    .first-div {
         padding-left: 6%;
         padding-right: 6%;
     }
 
-    .firstDiv button {
+    .first-div button {
         margin-top: 20px;
     }
 
@@ -328,13 +387,13 @@ footer ul > li:nth-child(6):hover {
         padding-right: 6%;
     }
 
-    .projectImages {
+    .project-images {
         display: grid;
         grid-template-columns: repeat(2);
         grid-template-rows: repeat(3);
     }
 
-    .projectImageOne {
+    .project-img-1 {
         grid-column: 1;
         grid-row: 1;
         width: 300px;
@@ -342,7 +401,7 @@ footer ul > li:nth-child(6):hover {
         margin: 75px auto 0px auto;
     }
     
-    .projectImageTwo {
+    .project-img-2 {
         grid-column: 1;
         grid-row: 2;
         width: 123px;
@@ -350,7 +409,7 @@ footer ul > li:nth-child(6):hover {
         margin: 75px auto 0px auto;
     }
 
-    .projectImageThree {
+    .project-img-3 {
         grid-column: 1;
         grid-row: 3;
         width: 100px;
@@ -359,7 +418,7 @@ footer ul > li:nth-child(6):hover {
         cursor: pointer;
     }
     
-    .projectImageFour {
+    .project-img-4 {
         grid-column: 2;
         grid-row: 1;
         width: 300px;
@@ -368,7 +427,7 @@ footer ul > li:nth-child(6):hover {
         cursor: pointer;
     }
     
-    .projectImageFive {
+    .project-img-5 {
         grid-column: 2;
         grid-row: 2;
         width: 123px;
@@ -377,7 +436,7 @@ footer ul > li:nth-child(6):hover {
         cursor: pointer;
     }
     
-    .projectImageSix {
+    .project-img-6 {
         grid-column: 2;
         grid-row: 3;
         width: 100px;
@@ -386,17 +445,172 @@ footer ul > li:nth-child(6):hover {
         cursor: pointer;
     }
     
+    .technological-skills-block {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
 
+    .technological-skills-block h2 {
+        font-size: 28px;
+    }
+
+    .technological-skills-block p {
+        font-size: 15px;
+    }
+
+    .technological-skills-container {
+        margin: 0 4%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .technological-skills-container p {
+        font-size: 16px;
+    }
+
+    .html-grid {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    
+    .css-grid {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    
+    .javascript-grid {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+    
+    .git-grid {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+    
+    .github-grid {
+        grid-column: span 2;
+        grid-row: 3;
+    }
+    
+    .sass-grid {
+        grid-column: span 2;
+        grid-row: 3;
+    }
+    
+    .jquery-grid {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+    
+    .react-grid {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+    
+    .redux-grid {
+        grid-column: span 2;
+        grid-row: 5;
+    }
+    
+    .wordpress-grid {
+        grid-column: span 2;
+        grid-row: 5;
+    }
      
      
-    .whoAmI,
-    .letsConnect,
+    .who-am-i-container,
+    .lets-connect,
     footer {
         display: none;
     }
-  }
+}
 
 
+
+
+
+
+
+
+@media (min-width: 768px) 
+and (max-width: 1024px)
+and (orientation: landscape) {
+    .technological-skills-block h2 {
+        font-size: 28px;
+    }
+
+    .technological-skills-block p {
+        font-size: 15px;
+    }
+
+    .technological-skills-container {
+        margin: 0 11%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .technological-skills-container p {
+        font-size: 16px;
+    }
+
+    .html-grid {
+        grid-column: span 3;
+        grid-row: 1;
+    }
+    
+    .css-grid {
+        grid-column: span 3;
+        grid-row: 1;
+    }
+    
+    .javascript-grid {
+        grid-column: span 6;
+        grid-row: 2;
+    }
+    
+    .git-grid {
+        grid-column: span 2;
+        grid-row: 3;
+    }
+    
+    .github-grid {
+        grid-column: span 2;
+        grid-row: 3;
+    }
+    
+    .sass-grid {
+        grid-column: span 2;
+        grid-row: 3;
+    }
+    
+    .jquery-grid {
+        grid-column: span 3;
+        grid-row: 4;
+    }
+    
+    .react-grid {
+        grid-column: span 3;
+        grid-row: 4;
+    }
+    
+    .redux-grid {
+        grid-column: span 3;
+        grid-row: 5;
+    }
+    
+    .wordpress-grid {
+        grid-column: span 3;
+        grid-row: 5;
+    }
+     
+     
+    .who-am-i-container,
+    .lets-connect,
+    footer {
+        display: none;
+    }
+}
 
 
 
@@ -435,7 +649,7 @@ footer ul > li:nth-child(6):hover {
     }
 
 
-    .firstDiv button {
+    .first-div button {
         margin-left: 5px;
         margin-right: 5px;
     }
