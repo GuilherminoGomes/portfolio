@@ -10,7 +10,7 @@
 }
 
 *::selection {
-    background-color: rgba(255, 205, 32, 0.9);
+    background-color: rgba(255, 41, 41, 0.7);
 }
 
 body {
@@ -23,17 +23,22 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 18px 10%;
     background-color: #ffc600;
+    border-bottom: white solid 1px;
     font-family: 'Poppins', sans-serif;
+    position: fixed;
+    width: 100%;
 }
 
-header h2 {
+header img, a {
+    height: 40px;
+    width: 70px;
     margin-right: auto;
 }
 
 nav ul li {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     text-decoration: none;
     list-style: none;
@@ -47,220 +52,268 @@ nav ul li:hover {
     color: #fbfbfb;
 }
 
+nav ul li:last-child {
+    padding-right: 5px;
+}
+
 
 /*------FIRST DIV------*/
-.firstDiv {
-    background-color: #fcfcfc;
+.first-div {
+    background-color: white;
     border-bottom: solid 1px #ffc600;
-    padding: 110px 10%;
+    padding: 150px 10% 110px 10%;
 }
 
-.firstDiv h1 {
+.first-div h1 {
     font-family: 'Playfair Display', serif;
+    font-size: 75px;
 }
 
-button {
+.first-div button {
     background-color: #ff2929;
     color:#fbfbfb;
     border: none;
     border-radius: 5px;
     padding: 15px;
     font-family: 'Poppins', sans-serif;
-    margin-top: 25px;
+    margin-top: 35px;
     transition: all ease 0.5s;
     cursor: pointer;
     margin-right: 30px;
+    font-size: 14px;
 }
 
-button:hover {
-    background-color: #e01a1a;
-}
-
-
-/*------RAVE REVIEWS------*/
-.raveReviews {
-    padding: 50px 10%;
-    background-color: #fbfbfb;
-    border-bottom: #ffc600 solid 1px;
-}
-
-.raveReviews h2{
-    font-family: 'Playfair Display', serif;
-    display: block;
-}
-
-.raveReviewsSections {
-    display: flex;
-}
-
-.raveReviewsSections div {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    background-color: #ffc600;
-    margin-right: 15px;
-    padding: 30px 20px;
-    text-align: justify;
-    border-radius: 3px;
-    margin-top: 25px;
+.first-div button:hover {
+    background-color: #ff4d4d;
 }
 
 
 /*------PROJECTS------*/
 .projects {
-    background-color: #fcfcfc;
+    background-color: #fafafa;
     font-family: 'Poppins', sans-serif;
     border-bottom: #ffc600 solid 1px;
-    padding: 100px 10%;
+    padding: 100px 10% 115px 10%;
+    text-align: center;
 }
 
 .projects h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 17px;
+    font-size: 28px;
 }
 
-.projectImages {
+.project-images {
     display: grid;
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(5);
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(2);
 }
 
-.projectImageOne {
+.project-img-1 {
     grid-column: 1;
     grid-row: 1;
     width: 400px;
     height: 214px;
-    margin: 0px auto;
+    margin: 75px auto 0px auto;
     cursor: pointer;
 }
 
-.projectImageTwo {
+.project-img-2 {
     grid-column: 2;
     grid-row: 1;
-    width: 250px;
-    height: 250px;
+    width: 164px;
+    height: 214px;
     margin: 75px auto 0px auto;
     cursor: pointer;
 }
 
-.projectImageThree {
+.project-img-3 {
+    grid-column: 3;
+    grid-row: 1;
+    width: 132px;
+    height: 214px;
+    margin: 75px auto 0px auto;
+    cursor: pointer;
+}
+
+.project-img-4 {
     grid-column: 1;
     grid-row: 2;
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 214px;
     margin: 75px auto 0px auto;
     cursor: pointer;
 }
 
-.projectImageFour {
+.project-img-5 {
     grid-column: 2;
     grid-row: 2;
-    width: 400px;
-    height: 400px;
-    margin: 0px auto;
-    cursor: pointer;
-}
-
-.projectImageFive {
-    grid-column: 1;
-    grid-row: 3;
-    width: 250px;
-    height: 250px;
+    width: 164px;
+    height: 214px;
     margin: 75px auto 0px auto;
     cursor: pointer;
 }
 
-.projectImageSix {
-    grid-column: 2;
-    grid-row: 3;
-    width: 400px;
-    height: 400px;
-    margin: 0px auto;
-    cursor: pointer;
-}
-
-.projectImageSeven {
-    grid-column: 1;
-    grid-row: 4;
-    width: 400px;
-    height: 400px;
-    margin: 0px auto;
-    cursor: pointer;
-}
-
-.projectImageEight {
-    grid-column: 2;
-    grid-row: 4;
-    width: 400px;
-    height: 400px;
-    margin: 0px auto;
-    cursor: pointer;
-}
-
-.projectImageNine {
-    grid-column: 1;
-    grid-row: 5;
-    width: 250px;
-    height: 250px;
+.project-img-6 {
+    grid-column: 3;
+    grid-row: 2;
+    width: 132px;
+    height: 214px;
     margin: 75px auto 0px auto;
     cursor: pointer;
 }
 
-.projectImageTen {
-    grid-column: 2;
+
+/*------TECNHO SKILLS------*/
+.technological-skills-block {
+    text-align: center;
+    background-color: white;
+    padding: 80px 0 70px 0;
+    border-bottom: #ffc600 solid 1px;
+}
+
+.technological-skills-block h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.technological-skills-block p {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 27px;
+}
+
+
+.technological-skills-container {
+    align-items: center;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    margin: 0 20%;
+}
+
+.technological-skills-container p {
+    background-color: #ffc600;
+    border: 1px solid #ffc600;
+    border-radius: 3px;
+    color: black;
+    font-weight: 600;
+    padding: 10px 8px;
+    transition: all ease .5s;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html-grid {
+    grid-column: span 3;
+    grid-row: 1;
+}
+
+.css-grid {
+    grid-column: span 3;
+    grid-row: 1;
+}
+
+.javascript-grid {
+    grid-column: span 6;
+    grid-row: 2;
+}
+
+.git-grid {
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+.github-grid {
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+.sass-grid {
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+.jquery-grid {
+    grid-column: span 3;
+    grid-row: 4;
+}
+
+.react-grid {
+    grid-column: span 3;
+    grid-row: 4;
+}
+
+.redux-grid {
+    grid-column: span 3;
     grid-row: 5;
-    width: 400px;
-    height: 400px;
-    margin: 0px auto;
-    cursor: pointer;
+}
+
+.wordpress-grid {
+    grid-column: span 3;
+    grid-row: 5;
+}
+
+.technological-skills-container p img {
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+}
+
+.technological-skills-container p:hover {
+    background-color: #fff;
 }
 
 
 /*------WHO AM I?------*/
-.whoAmI {
-    padding: 50px 10%;
+.who-am-i {
+    padding: 80px 10%;
     font-family: 'Poppins', sans-serif;
-    background-color: #fbfbfb;
+    background-color: #fafafa;
 }
 
-.whoAmI h2 {
+.who-am-i h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
     text-align: justify;
+    font-size: 28px;
 }
 
-.whoAmI2 {
-    display: flex;
-}
-
-.img {
-    width: 250px;
-    height: 250px;
-    margin-right: 50px;
-    border-radius: 2px;
-}
-
-.paragraphs > p:nth-child(3) {
+.who-am-i p {
     margin-top: 20px;
-    font-size: 17px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 
 /*------LET'S CONNECT------*/
-.letsConnect {
+.lets-connect {
     background-color: #000720;
     color: #fbfbfb;
-    padding: 60px 10%;
+    padding: 40px 10%;
     font-family: 'Poppins', sans-serif;
 }
 
-.letsConnect h2 {
+.lets-connect h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 17px;
+    font-size: 28px;
 }
 
-span {
+.lets-connect p a {
     color: #f71b1b;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.lets-connect p a:visited {
+    color: #f71b1b;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -269,44 +322,288 @@ footer {
     background-color: #ffc600;
     font-family: 'Poppins', sans-serif;
     padding: 30px 0px;
+    text-align: center;
 }
 
-footer ul {
-    margin: 0px;
-    padding-right: 10%;
-    padding-left: 10%;
-    display: flex;
 
-}
-
-footer ul li {
-    font-size: 14px;
+footer p {
+    font-size: 13px;
     font-weight: 500;
-    text-decoration: none;
-    list-style: none;
-    display: inline;
-    padding: 0px;
-    cursor: pointer;
-    margin: 0px 20px;
-    transition: all ease 0.2s ;
 }
 
-footer ul li:hover {
-    color: #fbfbfb;
+
+
+
+/*-------------------------------------*/
+/*------------MEDIA QUERIES------------*/
+/*-------------------------------------*/
+
+/*------------TABLETS------------*/
+@media /*(min-width: 768px) 
+and (max-width: 1024px)*/
+(max-width: 768px)
+and (orientation : portrait) {
+    header {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .first-div {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .first-div button {
+        margin-top: 50px;
+    }
+
+    .projects {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .project-images {
+        display: grid;
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(3);
+    }
+
+    .project-img-1 {
+        grid-column: 1;
+        grid-row: 1;
+        width: 300px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+    }
+    
+    .project-img-2 {
+        grid-column: 1;
+        grid-row: 2;
+        width: 123px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+    }
+
+    .project-img-3 {
+        grid-column: 1;
+        grid-row: 3;
+        width: 100px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+        cursor: pointer;
+    }
+    
+    .project-img-4 {
+        grid-column: 2;
+        grid-row: 1;
+        width: 300px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+        cursor: pointer;
+    }
+    
+    .project-img-5 {
+        grid-column: 2;
+        grid-row: 2;
+        width: 123px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+        cursor: pointer;
+    }
+    
+    .project-img-6 {
+        grid-column: 2;
+        grid-row: 3;
+        width: 100px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+        cursor: pointer;
+    }
+    
+    .technological-skills-block {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .technological-skills-block h2 {
+        font-size: 28px;
+    }
+
+    .technological-skills-block p {
+        font-size: 15px;
+    }
+
+    .technological-skills-container {
+        margin: 0 4%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .technological-skills-container p {
+        font-size: 16px;
+    }
+
+    .html-grid {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    
+    .css-grid {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    
+    .javascript-grid {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+    
+    .git-grid {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+    
+    .github-grid {
+        grid-column: span 2;
+        grid-row: 3;
+    }
+    
+    .sass-grid {
+        grid-column: span 2;
+        grid-row: 3;
+    }
+    
+    .jquery-grid {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+    
+    .react-grid {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+    
+    .redux-grid {
+        grid-column: span 2;
+        grid-row: 5;
+    }
+    
+    .wordpress-grid {
+        grid-column: span 2;
+        grid-row: 5;
+    }
+     
+    .lets-connect {
+        padding: 30px 10%;
+    }     
+
+    .lets-connect p {
+        font-size: 15px;
+    }
+
 }
 
-footer ul > li:nth-child(1) {
-    margin-left: 0px;
+@media /*(min-width: 768px) 
+and (max-width: 1024px)*/
+(max-width: 1024px)
+and (orientation: landscape) {
+    .technological-skills-block h2 {
+        font-size: 28px;
+    }
+
+    .technological-skills-block p {
+        font-size: 15px;
+    }
+
+    .technological-skills-container {
+        margin: 0 11%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .technological-skills-container p {
+        font-size: 16px;
+    }
 }
 
-footer ul > li:nth-child(6) {
-    margin: 0px;
-    margin-left: auto;
-    cursor: text;
-    transition: none;
-}
 
-footer ul > li:nth-child(6):hover {
-    color: black;
-}
+/*------------SMARTPHONES------------*/
+@media (max-width: 480px)
+and (orientation: portrait) {
+    .first-div {
+        padding-top: 200px;
+    }
 
+    .first-div h1 {
+        font-size: 40px;
+    }
+
+    .first-div button {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .technological-skills-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9);
+    }
+
+    .technological-skills-container p {
+        font-size: 14px;
+    }
+
+    .html-grid {
+        grid-column: span 4;
+        grid-row: 1;
+    }
+    
+    .css-grid {
+        grid-column: span 4;
+        grid-row: 2;
+    }
+    
+    .javascript-grid {
+        grid-column: span 4;
+        grid-row: 3;
+    }
+    
+    .git-grid {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+    
+    .github-grid {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+    
+    .sass-grid {
+        grid-column: span 2;
+        grid-row: 5;
+    }
+    
+    .jquery-grid {
+        grid-column: span 2;
+        grid-row: 5;
+    }
+    
+    .react-grid {
+        grid-column: span 2;
+        grid-row: 6;
+    }
+    
+    .redux-grid {
+        grid-column: span 3;
+        grid-row: 6;
+    }
+    
+    .wordpress-grid {
+        grid-column: span 4;
+        grid-row: 7;
+    }
+
+
+    .projects {
+        display: none;
+    }
+}
