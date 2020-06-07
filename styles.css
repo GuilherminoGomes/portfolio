@@ -24,17 +24,23 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 25px 10%;
     background-color: #ffc600;
     font-family: 'Poppins', sans-serif;
 }
 
-header h2 {
+/*header h2 {
+    margin-right: auto;
+}*/
+
+header img, a {
+    height: 40px;
+    width: 70px;
     margin-right: auto;
 }
 
 nav ul li {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     text-decoration: none;
     list-style: none;
@@ -60,7 +66,7 @@ nav ul li:hover {
     font-family: 'Playfair Display', serif;
 }
 
-button {
+.firstDiv button {
     background-color: #ff2929;
     color:#fbfbfb;
     border: none;
@@ -73,7 +79,7 @@ button {
     margin-right: 30px;
 }
 
-button:hover {
+.firstDiv button:hover {
     background-color: #e01a1a;
 }
 
@@ -84,6 +90,7 @@ button:hover {
     font-family: 'Poppins', sans-serif;
     border-bottom: #ffc600 solid 1px;
     padding: 100px 10%;
+    text-align: center;
 }
 
 .projects h2 {
@@ -109,7 +116,7 @@ button:hover {
 .projectImageTwo {
     grid-column: 2;
     grid-row: 1;
-    width: 132px;
+    width: 164px;
     height: 214px;
     margin: 75px auto 0px auto;
     cursor: pointer;
@@ -118,7 +125,7 @@ button:hover {
 .projectImageThree {
     grid-column: 3;
     grid-row: 1;
-    width: 164px;
+    width: 132px;
     height: 214px;
     margin: 75px auto 0px auto;
     cursor: pointer;
@@ -136,7 +143,7 @@ button:hover {
 .projectImageFive {
     grid-column: 2;
     grid-row: 2;
-    width: 132px;
+    width: 164px;
     height: 214px;
     margin: 75px auto 0px auto;
     cursor: pointer;
@@ -145,18 +152,14 @@ button:hover {
 .projectImageSix {
     grid-column: 3;
     grid-row: 2;
-    width: 400px;
+    width: 132px;
     height: 214px;
     margin: 75px auto 0px auto;
     cursor: pointer;
 }
 
 
-
-
-
-
-
+/*------TECNHO SKILLS------*/
 .technological-skills-block {
     text-align: center;
     background-color: white;
@@ -201,12 +204,6 @@ button:hover {
 .technological-skills-container p:hover {
     background-color: #fff;
 }
-
-
-
-
-
-
 
 
 /*------WHO AM I?------*/
@@ -304,8 +301,142 @@ footer ul > li:nth-child(6):hover {
     color: black;
 }
 
-@media only screen and (max-width: 700px) {
-    body {
+
+
+
+
+
+
+/*-----MEDIA QUERIES-----*/
+@media (max-width: 768px) {
+    header {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .firstDiv {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .firstDiv button {
+        margin-top: 20px;
+    }
+
+    .projects {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .projectImages {
+        display: grid;
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(3);
+    }
+
+    .projectImageOne {
+        grid-column: 1;
+        grid-row: 1;
+        width: 300px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+    }
+    
+    .projectImageTwo {
+        grid-column: 1;
+        grid-row: 2;
+        width: 123px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+    }
+
+    .projectImageThree {
+        grid-column: 1;
+        grid-row: 3;
+        width: 100px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+        cursor: pointer;
+    }
+    
+    .projectImageFour {
+        grid-column: 2;
+        grid-row: 1;
+        width: 300px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+        cursor: pointer;
+    }
+    
+    .projectImageFive {
+        grid-column: 2;
+        grid-row: 2;
+        width: 123px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+        cursor: pointer;
+    }
+    
+    .projectImageSix {
+        grid-column: 2;
+        grid-row: 3;
+        width: 100px;
+        height: 161px;
+        margin: 75px auto 0px auto;
+        cursor: pointer;
+    }
+    
+
+     
+     
+    .whoAmI,
+    .letsConnect,
+    footer {
+        display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 360px) {
+    header {
       background-color: blue;
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-rows: 2;
+      padding: 25px 0;
+    }
+
+    header img, a {
+        grid-row: 1;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        grid-row: 2;
+        margin: auto;
+    }
+
+    header nav li {
+        display: block;
+        color: white;
+    }
+
+
+    .firstDiv button {
+        margin-left: 5px;
+        margin-right: 5px;
     }
   }
