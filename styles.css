@@ -339,8 +339,9 @@ footer p {
 /*-------------------------------------*/
 
 /*------------TABLETS------------*/
-@media (min-width: 768px) 
-and (max-width: 1024px)
+@media /*(min-width: 768px) 
+and (max-width: 1024px)*/
+(max-width: 768px)
 and (orientation : portrait) {
     header {
         padding-left: 6%;
@@ -502,8 +503,9 @@ and (orientation : portrait) {
 
 }
 
-@media (min-width: 768px) 
-and (max-width: 1024px)
+@media /*(min-width: 768px) 
+and (max-width: 1024px)*/
+(max-width: 1024px)
 and (orientation: landscape) {
     .technological-skills-block h2 {
         font-size: 28px;
@@ -526,32 +528,82 @@ and (orientation: landscape) {
 
 
 /*------------SMARTPHONES------------*/
-  @media (max-width: 360px) {
-    header {
-      background-color: blue;
-      display: grid;
-      grid-template-columns: 1;
-      grid-template-rows: 2;
-      padding: 25px 0;
+@media (max-width: 480px)
+and (orientation: portrait) {
+    .first-div {
+        padding-top: 200px;
     }
 
-    header img, a {
-        grid-row: 1;
-        margin: 0 auto;
-    }
-
-    header nav ul {
-        grid-row: 2;
-        margin: auto;
-    }
-
-    header nav li {
-        display: block;
-        color: white;
+    .first-div h1 {
+        font-size: 40px;
     }
 
     .first-div button {
         margin-left: 5px;
         margin-right: 5px;
     }
-  }
+
+    .technological-skills-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9);
+    }
+
+    .technological-skills-container p {
+        font-size: 14px;
+    }
+
+    .html-grid {
+        grid-column: span 4;
+        grid-row: 1;
+    }
+    
+    .css-grid {
+        grid-column: span 4;
+        grid-row: 2;
+    }
+    
+    .javascript-grid {
+        grid-column: span 4;
+        grid-row: 3;
+    }
+    
+    .git-grid {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+    
+    .github-grid {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+    
+    .sass-grid {
+        grid-column: span 2;
+        grid-row: 5;
+    }
+    
+    .jquery-grid {
+        grid-column: span 2;
+        grid-row: 5;
+    }
+    
+    .react-grid {
+        grid-column: span 2;
+        grid-row: 6;
+    }
+    
+    .redux-grid {
+        grid-column: span 3;
+        grid-row: 6;
+    }
+    
+    .wordpress-grid {
+        grid-column: span 4;
+        grid-row: 7;
+    }
+
+
+    .projects {
+        display: none;
+    }
+}
