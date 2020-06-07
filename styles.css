@@ -23,9 +23,12 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 25px 10%;
+    padding: 18px 10%;
     background-color: #ffc600;
+    border-bottom: white solid 1px;
     font-family: 'Poppins', sans-serif;
+    position: fixed;
+    width: 100%;
 }
 
 header img, a {
@@ -49,12 +52,16 @@ nav ul li:hover {
     color: #fbfbfb;
 }
 
+nav ul li:last-child {
+    padding-right: 5px;
+}
+
 
 /*------FIRST DIV------*/
 .first-div {
     background-color: white;
     border-bottom: solid 1px #ffc600;
-    padding: 90px 10% 110px 10%;
+    padding: 150px 10% 110px 10%;
 }
 
 .first-div h1 {
@@ -86,7 +93,7 @@ nav ul li:hover {
     background-color: #fafafa;
     font-family: 'Poppins', sans-serif;
     border-bottom: #ffc600 solid 1px;
-    padding: 100px 10%;
+    padding: 100px 10% 115px 10%;
     text-align: center;
 }
 
@@ -162,6 +169,7 @@ nav ul li:hover {
     text-align: center;
     background-color: white;
     padding: 80px 0 70px 0;
+    border-bottom: #ffc600 solid 1px;
 }
 
 .technological-skills-block h2 {
@@ -181,7 +189,7 @@ nav ul li:hover {
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     justify-content: center;
     margin: 0 20%;
 }
@@ -201,53 +209,53 @@ nav ul li:hover {
 }
 
 .html-grid {
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row: 1;
 }
 
 .css-grid {
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row: 1;
 }
 
 .javascript-grid {
-    grid-column: span 2;
-    grid-row: 1;
+    grid-column: span 6;
+    grid-row: 2;
 }
 
 .git-grid {
     grid-column: span 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .github-grid {
     grid-column: span 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .sass-grid {
     grid-column: span 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .jquery-grid {
     grid-column: span 3;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .react-grid {
     grid-column: span 3;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .redux-grid {
     grid-column: span 3;
-    grid-row: 4;
+    grid-row: 5;
 }
 
 .wordpress-grid {
     grid-column: span 3;
-    grid-row: 4;
+    grid-row: 5;
 }
 
 .technological-skills-container p img {
@@ -262,33 +270,23 @@ nav ul li:hover {
 
 
 /*------WHO AM I?------*/
-.who-am-i-container {
-    padding: 50px 10%;
+.who-am-i {
+    padding: 80px 10%;
     font-family: 'Poppins', sans-serif;
     background-color: #fafafa;
 }
 
-.who-am-i-container h2 {
+.who-am-i h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
     text-align: justify;
     font-size: 28px;
 }
 
-.who-am-i {
-    display: flex;
-}
-
-.who-am-i img {
-    width: 250px;
-    height: 250px;
-    margin-right: 50px;
-    border-radius: 2px;
-}
-
-.who-am-i-paragraphs > p:nth-child(3) {
+.who-am-i p {
     margin-top: 20px;
-    font-size: 17px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 
@@ -296,7 +294,7 @@ nav ul li:hover {
 .lets-connect {
     background-color: #000720;
     color: #fbfbfb;
-    padding: 60px 10%;
+    padding: 40px 10%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -306,9 +304,16 @@ nav ul li:hover {
     font-size: 28px;
 }
 
-.lets-connect p span {
+.lets-connect p a {
     color: #f71b1b;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.lets-connect p a:visited {
+    color: #f71b1b;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -317,54 +322,23 @@ footer {
     background-color: #ffc600;
     font-family: 'Poppins', sans-serif;
     padding: 30px 0px;
+    text-align: center;
 }
 
-footer ul {
-    margin: 0px;
-    padding-right: 10%;
-    padding-left: 10%;
-    display: flex;
 
-}
-
-footer ul li {
-    font-size: 14px;
+footer p {
+    font-size: 13px;
     font-weight: 500;
-    text-decoration: none;
-    list-style: none;
-    display: inline;
-    padding: 0px;
-    cursor: pointer;
-    margin: 0px 20px;
-    transition: all ease 0.2s ;
-}
-
-footer ul li:hover {
-    color: #fbfbfb;
-}
-
-footer ul > li:nth-child(1) {
-    margin-left: 0px;
-}
-
-footer ul > li:nth-child(6) {
-    margin: 0px;
-    margin-left: auto;
-    cursor: text;
-    transition: none;
-}
-
-footer ul > li:nth-child(6):hover {
-    color: black;
 }
 
 
 
 
+/*-------------------------------------*/
+/*------------MEDIA QUERIES------------*/
+/*-------------------------------------*/
 
-
-
-/*-------------MEDIA QUERIES-------------*/
+/*------------TABLETS------------*/
 @media (min-width: 768px) 
 and (max-width: 1024px)
 and (orientation : portrait) {
@@ -379,7 +353,7 @@ and (orientation : portrait) {
     }
 
     .first-div button {
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .projects {
@@ -518,20 +492,15 @@ and (orientation : portrait) {
         grid-row: 5;
     }
      
-     
-    .who-am-i-container,
-    .lets-connect,
-    footer {
-        display: none;
+    .lets-connect {
+        padding: 30px 10%;
+    }     
+
+    .lets-connect p {
+        font-size: 15px;
     }
+
 }
-
-
-
-
-
-
-
 
 @media (min-width: 768px) 
 and (max-width: 1024px)
@@ -553,77 +522,10 @@ and (orientation: landscape) {
     .technological-skills-container p {
         font-size: 16px;
     }
-
-    .html-grid {
-        grid-column: span 3;
-        grid-row: 1;
-    }
-    
-    .css-grid {
-        grid-column: span 3;
-        grid-row: 1;
-    }
-    
-    .javascript-grid {
-        grid-column: span 6;
-        grid-row: 2;
-    }
-    
-    .git-grid {
-        grid-column: span 2;
-        grid-row: 3;
-    }
-    
-    .github-grid {
-        grid-column: span 2;
-        grid-row: 3;
-    }
-    
-    .sass-grid {
-        grid-column: span 2;
-        grid-row: 3;
-    }
-    
-    .jquery-grid {
-        grid-column: span 3;
-        grid-row: 4;
-    }
-    
-    .react-grid {
-        grid-column: span 3;
-        grid-row: 4;
-    }
-    
-    .redux-grid {
-        grid-column: span 3;
-        grid-row: 5;
-    }
-    
-    .wordpress-grid {
-        grid-column: span 3;
-        grid-row: 5;
-    }
-     
-     
-    .who-am-i-container,
-    .lets-connect,
-    footer {
-        display: none;
-    }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/*------------SMARTPHONES------------*/
   @media (max-width: 360px) {
     header {
       background-color: blue;
@@ -647,7 +549,6 @@ and (orientation: landscape) {
         display: block;
         color: white;
     }
-
 
     .first-div button {
         margin-left: 5px;
