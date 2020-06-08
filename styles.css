@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 18px 10%;
+    padding: 10px 10%;
     background-color: #ffc600;
     border-bottom: white solid 1px;
     font-family: 'Poppins', sans-serif;
@@ -530,6 +530,11 @@ and (orientation: landscape) {
 /*------------SMARTPHONES------------*/
 @media (max-width: 480px)
 and (orientation: portrait) {
+    header nav ul li {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
     .first-div {
         padding-top: 200px;
     }
@@ -602,6 +607,37 @@ and (orientation: portrait) {
         grid-row: 7;
     }
 
+
+    .projects {
+        display: none;
+    }
+}
+
+@media (max-width: 740px)
+and (orientation: landscape) {
+    header img, a {
+        height: 28px;
+        width: 50px;
+        margin-right: auto;
+    }
+
+    nav ul li {
+        font-size: 15px;
+        padding: 0 5px;
+    }
+
+    .first-div {
+        padding-top: 75px;
+        padding-bottom: 55px;
+    }
+
+    .first-div h1 {
+        font-size: 43px;
+    }
+
+    .first-div button {
+        margin-top: 20px;
+    }
 
     .projects {
         display: none;
