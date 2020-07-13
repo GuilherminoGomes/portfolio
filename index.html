@@ -16,12 +16,12 @@
 <body>
     <header>
         <a href="index.html"><img src="images/logo.png"></a>
-        <nav>
+        <nav class="fixed-nav">
             <ul>
-                <li>ABOUT</li>
-                <li>PROJECTS</li>
-                <li>CONTACT</li>
-                <li>RESUME</li>
+                <li><a href="#projects" class="scroll-link">PROJECTS</a></li>
+                <li><a href="#about" class="scroll-link">ABOUT</a></li>
+                <li><a href="#contact" class="scroll-link">CONTACT</a></li>
+                <li><a href="#">RESUME</a></li>
             </ul>
         </nav>
     </header>
@@ -32,22 +32,61 @@
         <button>CONTACT ME</button>
     </div>
 
-    <div class="projects">
-        <h2>Let's make the web a more delightful place.</h2>
-        <p>Websites shouldn't just look 'pretty' - they should <strong>inspire action</strong>. Here are a handful of project I'm particularly proud of.</p>
+    <div class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
 
-        <div class="project-images">
-            <img src="images/project-img-1.png" class="project-img-1"></img>
+            <div class="projects-img-1">
+                <div class="projects-images">
+                    <div class="projects-white-space">
+                        <h4 class="img-description">This image looks super neat.</h4>
+                    </div>
 
-            <img src="images/project-img-2.png" class="project-img-2"></img>
+                    <div class="projects-buttons">
+                        <a target="_blank" href="https://guilherminogomes.github.io/read-a-book-group/" class="demo-btn">Demo</a>
+                        <a target="_blank" href="https://github.com/GuilherminoGomes/read-a-book-group" class="code-btn">Code</a>
+                    </div>
+                </div>
+            </div>
 
-            <img src="images/project-img-3.png" class="project-img-3"></img>
+            <div class="projects-img-2">
+                <div class="projects-images">
+                    <div class="projects-white-space">
+                        <h4 class="img-description">This image looks super neat.</h4>
+                    </div>
 
-            <img src="images/project-img-1.png" class="project-img-4"></img>
+                    <div class="projects-buttons">
+                        <a target="_blank" href="#" class="demo-btn">Demo</a>
+                        <a target="_blank" href="#" class="code-btn">Code</a>
+                    </div>
+                </div>
+            </div>
 
-            <img src="images/project-img-2.png" class="project-img-5"></img>
+            <div class="projects-img-3">
+                <div class="projects-images">
+                    <div class="projects-white-space">
+                        <h4 class="img-description">This image looks super neat.</h4>
+                    </div>
 
-            <img src="images/project-img-3.png" class="project-img-6"></img>
+                    <div class="projects-buttons">
+                        <a target="_blank" href="#" class="demo-btn">Demo</a>
+                        <a target="_blank" href="#" class="code-btn">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-img-4">
+                <div class="projects-images">
+                    <div class="projects-white-space">
+                        <h4 class="img-description">This image looks super neat.</h4>
+                    </div>
+
+                    <div class="projects-buttons">
+                        <a target="_blank" href="#" class="demo-btn">Demo</a>
+                        <a target="_blank" href="#" class="code-btn">Code</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -78,13 +117,13 @@
         </div>
     </div>
 
-    <div class="who-am-i">
+    <div class="who-am-i" id="about">
         <h2>Who am I?</h2>
 
         <p>I thrive at the intersection of form & function. I'm passionate about building beautiful, <strong>effective</strong> websites and email campaigns for creative small businesses. When I'm not coding like it's 1999 (my trusty old email dev joke), I also enjoy travel, various creative side projects, and baking the best chocolate chip cookies you will ever eat.</p>
     </div>
 
-    <div class="lets-connect">
+    <div class="lets-connect" id="contact">
         <h2>Let's Connect</h2>
         <p>Interested in working together? Shoot me an <a href="mailto:guilhermino2310@gmail.com">email</a> and I'll be in touch within a couple of hours.</p>
     </div>
