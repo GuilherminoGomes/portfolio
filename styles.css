@@ -5,6 +5,7 @@
 
 * {
     margin: 0px;
+    padding: 0;
     box-sizing: border-box;
     line-height: 1.5;
 }
@@ -21,6 +22,7 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /*NAVBAR--------------------------------------*/
 header {
@@ -40,25 +42,6 @@ header img, a {
     width: 70px;
     margin-right: auto;
 }
-
-/*nav ul li {
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    list-style: none;
-    display: inline;
-    padding: 0 20px;
-    cursor: pointer;
-    transition: all ease 0.2s ;
-}
-
-nav ul li:hover {
-    color: #fbfbfb;
-}
-
-nav ul li:last-child {
-    padding-right: 5px;
-}*/
 
 nav ul li,
 nav ul a {
@@ -80,6 +63,7 @@ nav ul a:hover {
 nav ul a:last-child {
     padding-right: 5px;
 }
+
 
 /*FIRST DIV------------------------------------*/
 .first-div {
@@ -117,20 +101,20 @@ nav ul a:last-child {
     background-color: #fafafa;
     font-family: 'Poppins', sans-serif;
     border-bottom: #ffc600 solid 1px;
-    padding: 100px 10% 115px 10%;
+    padding: 70px 10% 115px 10%;
     text-align: center;
 }
 
 .projects h2 {
     font-family: 'Playfair Display', serif;
-    margin-bottom: 17px;
-    font-size: 38px;
+    margin-bottom: 50px;
+    font-size: 45px;
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(4, /*245px*/1fr);
-    grid-template-rows: repeat(2, 250px);
+    grid-template-rows: repeat(1, 250px);
     grid-gap: 30px;
 }
 
@@ -192,7 +176,7 @@ nav ul a:last-child {
 
 .projects-white-space {
     width: 100%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     height: 80%;
     display: flex;
     justify-content: center;
@@ -202,7 +186,7 @@ nav ul a:last-child {
 .projects-white-space h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    color: #000;
+    color: white;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -242,30 +226,29 @@ nav ul a:last-child {
 .technological-skills-block {
     text-align: center;
     background-color: white;
-    padding: 80px 0 70px 0;
+    padding: 70px 0 80px 0;
     border-bottom: #ffc600 solid 1px;
 }
 
 .technological-skills-block h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
-    font-size: 38px;
+    font-size: 45px;
 }
 
 .technological-skills-block p {
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 27px;
+    margin-bottom: 40px;
 }
-
 
 .technological-skills-container {
     align-items: center;
     display: grid;
-    grid-gap: 3px;
+    grid-gap: 10px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     justify-content: center;
-    margin: 0 20%;
+    margin: 0 23%;
 }
 
 .technological-skills-container p {
@@ -276,10 +259,11 @@ nav ul a:last-child {
     font-weight: 600;
     padding: 10px 8px;
     transition: all ease .5s;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .html-grid {
@@ -298,38 +282,18 @@ nav ul a:last-child {
 }
 
 .git-grid {
-    grid-column: span 2;
-    grid-row: 3;
+    grid-column: span 3;
+    grid-row: 4;
 }
 
 .github-grid {
-    grid-column: span 2;
-    grid-row: 3;
+    grid-column: span 3;
+    grid-row: 4;
 }
 
 .sass-grid {
-    grid-column: span 2;
+    grid-column: span 6;
     grid-row: 3;
-}
-
-.jquery-grid {
-    grid-column: span 3;
-    grid-row: 4;
-}
-
-.react-grid {
-    grid-column: span 3;
-    grid-row: 4;
-}
-
-.redux-grid {
-    grid-column: span 3;
-    grid-row: 5;
-}
-
-.wordpress-grid {
-    grid-column: span 3;
-    grid-row: 5;
 }
 
 .technological-skills-container p img {
@@ -345,21 +309,21 @@ nav ul a:last-child {
 
 /*WHO AM I?------------------------------------*/
 .who-am-i {
-    padding: 80px 10%;
+    padding: 60px 10%;
     font-family: 'Poppins', sans-serif;
     background-color: #fafafa;
 }
 
 .who-am-i h2 {
     font-family: 'Playfair Display', serif;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     text-align: justify;
-    font-size: 38px;
+    font-size: 45px;
 }
 
 .who-am-i p {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -374,8 +338,8 @@ nav ul a:last-child {
 
 .lets-connect h2 {
     font-family: 'Playfair Display', serif;
-    margin-bottom: 17px;
-    font-size: 38px;
+    margin-bottom: 33px;
+    font-size: 45px;
 }
 
 .lets-connect p a {
@@ -405,7 +369,7 @@ footer {
 
 footer p {
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -416,293 +380,242 @@ footer p {
 /*---------------------------------------------*/
 
 /*TABLETS--------------------------------------*/
-@media /*(min-width: 768px) 
-and (max-width: 1024px)*/
-(max-width: 768px)
+@media only screen 
+and (max-width: 768px)
 and (orientation : portrait) {
+    /*HEADER-----------------------------------*/
     header {
-        padding-left: 6%;
-        padding-right: 6%;
+        padding: 15px 8%;
+    }
+    
+    header img, a {
+        height: 50px;
+        width: 87px;
+    }
+    
+    nav ul li,
+    nav ul a {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    
+    nav ul a:last-child {
+        padding-right: 0;
     }
 
-    .first-div {
-        padding-left: 6%;
-        padding-right: 6%;
-    }
-
-    .first-div button {
-        margin-top: 50px;
-    }
-
+    /*PROJECTS----------------------------------*/
     .projects {
-        padding-left: 6%;
-        padding-right: 6%;
+        padding: 70px 13% 70px 13%;
     }
 
-    .project-images {
-        display: grid;
-        grid-template-columns: repeat(2);
-        grid-template-rows: repeat(3);
+    .projects-grid {
+        grid-template-columns: repeat(4, /*245px*/2fr);
+        grid-template-rows: repeat(2, 250px);
+        grid-gap: 30px 70px;
     }
 
-    .project-img-1 {
-        grid-column: 1;
+    .projects-img-1 {
+        grid-column: span 2;
         grid-row: 1;
-        width: 300px;
-        height: 161px;
-        margin: 75px auto 0px auto;
-    }
-    
-    .project-img-2 {
-        grid-column: 1;
-        grid-row: 2;
-        width: 123px;
-        height: 161px;
-        margin: 75px auto 0px auto;
     }
 
-    .project-img-3 {
-        grid-column: 1;
-        grid-row: 3;
-        width: 100px;
-        height: 161px;
-        margin: 75px auto 0px auto;
-        cursor: pointer;
-    }
-    
-    .project-img-4 {
-        grid-column: 2;
+    .projects-img-2 {
+        grid-column: span 2;
         grid-row: 1;
-        width: 300px;
-        height: 161px;
-        margin: 75px auto 0px auto;
-        cursor: pointer;
     }
-    
-    .project-img-5 {
-        grid-column: 2;
+
+    .projects-img-3 {
+        grid-column: span 2;
         grid-row: 2;
-        width: 123px;
-        height: 161px;
-        margin: 75px auto 0px auto;
-        cursor: pointer;
-    }
-    
-    .project-img-6 {
-        grid-column: 2;
-        grid-row: 3;
-        width: 100px;
-        height: 161px;
-        margin: 75px auto 0px auto;
-        cursor: pointer;
-    }
-    
-    .technological-skills-block {
-        padding-left: 6%;
-        padding-right: 6%;
     }
 
-    .technological-skills-block h2 {
-        font-size: 28px;
+    .projects-img-4 {
+        grid-column: span 2;
+        grid-row: 2;
     }
 
+    /*TECNHO SKILLS----------------------------*/
     .technological-skills-block p {
-        font-size: 15px;
+        margin-left: 60px;
+        margin-right: 60px;
     }
-
+    
     .technological-skills-container {
-        margin: 0 4%;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-
-    .technological-skills-container p {
-        font-size: 16px;
-    }
-
-    .html-grid {
-        grid-column: span 2;
-        grid-row: 1;
-    }
-    
-    .css-grid {
-        grid-column: span 2;
-        grid-row: 1;
-    }
-    
-    .javascript-grid {
-        grid-column: span 2;
-        grid-row: 2;
-    }
-    
-    .git-grid {
-        grid-column: span 2;
-        grid-row: 2;
-    }
-    
-    .github-grid {
-        grid-column: span 2;
-        grid-row: 3;
-    }
-    
-    .sass-grid {
-        grid-column: span 2;
-        grid-row: 3;
-    }
-    
-    .jquery-grid {
-        grid-column: span 2;
-        grid-row: 4;
-    }
-    
-    .react-grid {
-        grid-column: span 2;
-        grid-row: 4;
-    }
-    
-    .redux-grid {
-        grid-column: span 2;
-        grid-row: 5;
-    }
-    
-    .wordpress-grid {
-        grid-column: span 2;
-        grid-row: 5;
-    }
-     
-    .lets-connect {
-        padding: 30px 10%;
-    }     
-
-    .lets-connect p {
-        font-size: 15px;
-    }
-
-}
-
-@media /*(min-width: 768px) 
-and (max-width: 1024px)*/
-(max-width: 1024px)
-and (orientation: landscape) {
-    .technological-skills-block h2 {
-        font-size: 28px;
-    }
-
-    .technological-skills-block p {
-        font-size: 15px;
-    }
-
-    .technological-skills-container {
-        margin: 0 11%;
+        grid-gap: 10px;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 0 15%;
     }
 
     .technological-skills-container p {
+        margin: 0 0 10px 0;
+
+    }
+}
+
+@media only screen
+and (max-width: 1024px) 
+and (orientation: landscape) {
+    /*HEADER-----------------------------------*/
+    header {
+        padding: 15px 7%;
+    }
+    
+    header img, a {
+        height: 50px;
+        width: 87px;
+    }
+    
+    nav ul li,
+    nav ul a {
         font-size: 16px;
+        padding: 0 16px;
+    }
+    
+    nav ul a:last-child {
+        padding-right: 0;
+    }
+
+    /*TECNHO SKILLS----------------------------*/
+    .technological-skills-container {
+        margin: 0 15%;
+    }
+
+    .technological-skills-container p {
+        margin: 0 0 10px 0;
+
     }
 }
 
 
-/*SMARTPHONES-------------------------------------*/
-@media (max-width: 480px)
+
+/*SMARTPHONES--------------------------------------*/
+@media only screen 
+and (max-width: 480px)
 and (orientation: portrait) {
-    header nav ul li {
-        font-size: 14px;
-        padding: 0 5px;
+    /*HEADER------------------------------*/
+    header {
+        display: none;
     }
 
+    /*FIRST DIV--------------------------*/
     .first-div {
-        padding-top: 200px;
+        background-color: white;
+        border-bottom: solid 1px #ffc600;
+        padding: 150px 10% 60px 10%;
     }
-
+    
     .first-div h1 {
         font-size: 40px;
     }
 
     .first-div button {
-        margin-left: 5px;
         margin-right: 5px;
     }
 
-    .technological-skills-container {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(9);
+    /*PROJECTS-------------------------------*/
+    .projects {
+        padding: 40px 16.5% 60px 16.5%;
     }
-
-    .technological-skills-container p {
-        font-size: 14px;
+    
+    .projects-grid {
+        grid-template-columns: repeat(1, /*245px*/1fr);
+        grid-template-rows: repeat(4, 250px);
     }
-
-    .html-grid {
-        grid-column: span 4;
+    
+    .projects-img-1 {
+        grid-column: 1;
         grid-row: 1;
     }
     
-    .css-grid {
-        grid-column: span 4;
+    .projects-img-2 {
+        grid-column: 1;
         grid-row: 2;
     }
     
-    .javascript-grid {
-        grid-column: span 4;
+    .projects-img-3 {
+        grid-column: 1;
         grid-row: 3;
     }
     
-    .git-grid {
-        grid-column: span 2;
+    .projects-img-4 {
+        grid-column: 1;
         grid-row: 4;
     }
-    
-    .github-grid {
-        grid-column: span 2;
-        grid-row: 4;
-    }
-    
-    .sass-grid {
-        grid-column: span 2;
-        grid-row: 5;
-    }
-    
-    .jquery-grid {
-        grid-column: span 2;
-        grid-row: 5;
-    }
-    
-    .react-grid {
-        grid-column: span 2;
-        grid-row: 6;
-    }
-    
-    .redux-grid {
-        grid-column: span 3;
-        grid-row: 6;
-    }
-    
-    .wordpress-grid {
-        grid-column: span 4;
-        grid-row: 7;
-    }
 
-
-    .projects {
-        display: none;
-    }
+    /*TECNHO SKILLS----------------------------*/
+.technological-skills-block {
+    text-align: center;
+    background-color: white;
+    padding: 45px 0 50px 0;
+    border-bottom: #ffc600 solid 1px;
 }
 
-@media (max-width: 740px)
+.technological-skills-block p {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.technological-skills-container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 0 8%;
+}
+
+.technological-skills-container p {
+    margin: 0 0 13px 0;
+}
+
+.html-grid {
+    grid-column: span 6;
+    grid-row: 1;
+}
+
+.css-grid {
+    grid-column: span 6;
+    grid-row: 2;
+}
+
+.javascript-grid {
+    grid-column: span 6;
+    grid-row: 3;
+}
+
+.git-grid {
+    grid-column: span 3;
+    grid-row: 4;
+}
+
+.github-grid {
+    grid-column: span 3;
+    grid-row: 4;
+}
+
+.sass-grid {
+    grid-column: span 6;
+    grid-row: 5;
+}
+}
+
+@media only screen 
+and (max-width: 812px)
 and (orientation: landscape) {
+    /*HEADER---------------------------------*/
+    header {
+        padding: 10px 8%;
+    }
+
     header img, a {
-        height: 28px;
-        width: 50px;
-        margin-right: auto;
+        height: 40px;
+        width: 70px;
     }
 
     nav ul li {
         font-size: 15px;
-        padding: 0 5px;
+        padding: 0 7px;
     }
 
+    /*FIRST DIV--------------------------------*/
     .first-div {
         padding-top: 75px;
         padding-bottom: 55px;
@@ -710,17 +623,17 @@ and (orientation: landscape) {
 
     .first-div h1 {
         font-size: 43px;
+        margin-top: 50px;
     }
 
     .first-div button {
         margin-top: 20px;
     }
 
-    .projects {
-        display: none;
+    .projects,
+    .technological-skills-block {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
-
-
-
 
