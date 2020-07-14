@@ -379,14 +379,17 @@ nav ul a:last-child {
 }
 
 .lets-connect p a {
-    color: #f71b1b;
-    cursor: pointer;
+    color: #f73b3b;
+    text-decoration: none;
+}
+
+.lets-connect p a:hover {
+    color: #ff0000;
     text-decoration: none;
 }
 
 .lets-connect p a:visited {
-    color: #f71b1b;
-    cursor: pointer;
+    color: #f73b3b;
     text-decoration: none;
 }
 
