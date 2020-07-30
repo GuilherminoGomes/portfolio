@@ -6,9 +6,9 @@ Personal portfolio built using the good old basics. Made with HTML and  CSS.
 
 ## Built With
 
-* HTML5
+* HTML
 * CSS
-*JAVASCRIPT
+* JAVASCRIPT
 
 ## License
 
