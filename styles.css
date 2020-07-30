@@ -133,9 +133,10 @@ nav ul a:last-child {
     grid-column: 2;
     grid-row: 1;
     cursor: pointer;
-    background: url(.images/projects-img-2.png);
+    background: url(./images/projects-img-2.png);
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
 }
 
