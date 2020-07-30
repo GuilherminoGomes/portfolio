@@ -2,7 +2,7 @@
 
 Personal portfolio built using the good old basics. Made with HTML and  CSS. 
 
-[Guilhermino Gomes](https://guilherminogomes.github.io/portfolio/)
+[Portfolio](https://guilherminogomes.github.io/portfolio/)
 
 ## Built With
 
