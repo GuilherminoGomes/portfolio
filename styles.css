@@ -27,14 +27,30 @@ body {
 /*NAVBAR--------------------------------------*/
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 10%;
-    background-color: #ffc600;
-    border-bottom: white solid 1px;
+    padding: 30px 10%;
     font-family: 'Poppins', sans-serif;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     width: 100%;
+    transition: 0.6s;
+    border-bottom: #ffc600 1px solid;
+}
+
+header.sticky {
+    padding: 8px 10%;
+    background-color: #ffc600;
+    border-bottom: none;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header img, a {
@@ -43,24 +59,32 @@ header img, a {
     margin-right: auto;
 }
 
-nav ul li,
-nav ul a {
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     list-style: none;
     display: inline;
     padding: 0 20px;
-    cursor: pointer;
     transition: all ease 0.2s;
     color: black;
+    position: relative;
 }
 
-nav ul a:hover {
+nav ul li a:hover {
+    color: #ffc600;
+}
+
+header.sticky nav ul li a:hover {
     color: #fbfbfb;
 }
 
-nav ul a:last-child {
+nav ul li a:last-child {
     padding-right: 5px;
 }
 

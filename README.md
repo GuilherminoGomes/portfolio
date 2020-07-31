@@ -1,6 +1,6 @@
 # Guilhermino Gomes' Portfolio
 
-Personal portfolio built using the good old basics. Made with HTML and  CSS. 
+Personal portfolio built using the good old basics. Made with HTML, CSS and JAVASCRIPT. 
 
 [Portfolio](https://guilherminogomes.github.io/portfolio/)
 
